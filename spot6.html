@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Pievieno skatīšanās meta tagu, lai pārliecinātos, ka lapa ir responsīva dažādos ekrānos -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Log in to Spotify and access your music">
+  <title>Spotify Login</title>
+  <style>
+    /* Pamatstils visam darbam */
+    body {
+      background-color: #121212; /* Tumša fona krāsa */
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif; /* Fonta izvēle */
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Pilns ekrāns */
+    }
+
+    /* Login kastes dizains */
+    .login-box {
+      background-color: #000000; /* Tumša fona krāsa login formai */
+      padding: 40px;
+      border-radius: 10px; /* Noapaļoti stūri */
+      width: 360px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+      text-align: center; /* Teksta centrēšana */
+    }
+
+    h2 {
+      margin-bottom: 30px; /* Attālums starp virsrakstu un pārējo saturu bik nesanāca dažās vietās */
+    }
+
+    .btn {
+      width: 100%; /* Poga aizņem visu platumu */
+      padding: 12px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 30px; /* Noapaļoti stūri */
+      font-weight: bold;
+      cursor: pointer; 
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Centrē poga horizontāli un vertikāli */
+      background-color: #191414; /* Tumša fona krāsa */
+      color: white; /* Balts teksts */
+    }
+
+    /* Poga attēliem (ikonām) */
+    .btn img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px; /* Attālums starp ikonu un tekstu */
+      border-radius: 50%; /* Apaļas ikonas */
+    }
+
+    /* Formas laukumu stils */
+    .form-section {
+      margin-top: 30px; /* Attālums starp formu un iepriekšējo saturu */
+    }
+
+    /* Ievades lauku stils */
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px; /* Noapaļoti stūri */
+      border: none;
+      margin-bottom: 15px; /* Attālums no nākamā elementa */
+      background-color: #191414; /* Tumšs fons ievades laukam */
+      color: white; /* Balts teksts */
+    }
+
+    /* Stils turpināt pogai */
+    .btn-continue {
+      background-color: #1db954; /* Zaļā krāsa Spotify pogai */
+      color: black; /* Melns teksts */
+    }
+
+    /* Reģistrēšanās saite apakšā */
+    .signup {
+      margin-top: 20px; /* Attālums starp reģistrēšanās saiti un iepriekšējo saturu */
+      font-size: 14px;
+    }
+
+    .signup a {
+      color: #1db954; /* Zaļš teksts */
+      text-decoration: none; /* Noņem apakšsvītru */
+    }
+
+    
+    label {
+      float: left;
+      margin-bottom: 5px; /* Attālums no ievades lauka */
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Log in to Spotify</h2>
+
+    <!-- Poga, lai pieteiktos ar Google -->
+    <button class="btn">
+      <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google Logo"> <!-- Google ikona -->
+      Continue with Google
+    </button>
+
+    <!-- Poga, lai pieteiktos ar Facebook -->
+    <button class="btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook Logo"> <!-- Facebook ikona -->
+      Continue with Facebook
+    </button>
+
+    <!-- Poga, lai pieteiktos ar Apple -->
+    <button class="btn">
+      <img src="https://pngimg.com/uploads/apple_logo/apple_logo_PNG19673.png" alt="Apple Logo"> <!-- Apple ikona -->
+      Continue with Apple
+    </button>
+
+    <div class="form-section">
+      <!-- Forma, kurā var ievadīt e-pastu vai lietotājvārdu -->
+      <form action="#" method="post">
+        <label for="email">Email or username</label> 
+        <input type="text" id="email" name="email" placeholder="Email or username" required> <!-- Ievades lauks e-pastam vai lietotājvārdam -->
+        <button class="btn btn-continue" type="submit">Continue</button> <!-- Poga turpināšanai -->
+      </form>
+    </div>
+
+    <!-- Apakšējā saite reģistrācijai -->
+    <p class="signup">Don't have an account? <a href="#">Sign up for Spotify</a></p>
+  </div>
+</body>
+</html>
